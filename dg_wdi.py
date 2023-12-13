@@ -15,7 +15,7 @@ dir = Path(__file__).parent
 
 @st.cache_data
 def get_data():
-    df = pd.read_csv('data/wdi.csv')
+    df = pd.read_csv('wdi_app.csv')
     df['gdp_capita'] = df.gdp / df.population
     return df
 
